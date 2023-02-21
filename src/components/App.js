@@ -18,15 +18,24 @@ class App extends React.Component {
 				id: 1,
 				text: 'Rata za Auto',
 				date: '2023-03-16',
-				important: true,
+				important: false,
 				active: true,
 				finishDate: null,
 			},
 		],
 	};
 	deleteTask = (id) => {
-		console.log('delete App'+ id);
-	};
+// const tasks = [...this.state.tasks]
+// const index = tasks.findIndex(task => task.id === id)
+// tasks.splice (index, 1)
+// this.setState({tasks})
+
+let tasks = [...this.state.tasks];
+tasks = tasks.filter(task => task.id !==id)
+this.setState({tasks})
+
+
+};
   changeTaskStatus = (id) => {
 		console.log('change' + id);
 	};
