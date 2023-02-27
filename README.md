@@ -1,4 +1,4 @@
-# Ogarniam Finanse - financial management application
+# Ogarniam Finanse - financial management application - written in react
 
 ## General info
 
