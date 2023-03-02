@@ -9,21 +9,35 @@ class AddPlanner extends React.Component {
 	};
 
 	handleText = (e) => {
-		this.setState({text: e.target.value})
-	}
+		this.setState({ text: e.target.value });
+	};
 
 	handleDate = (e) => {
 		this.setState({ date: e.target.value });
 	};
 
 	handleCheckbox = (e) => {
-		this.setState({checked: e.target.value})
-	}
+		this.setState({ checked: e.target.value });
+	};
 
-	handleClick  = () =>{}
+	handleClick = () => {
+		console.log('dodaj');
+		const {text,checked, date} = this.state
+		const add = this.props.add(text, date, checked);
+		if (add) {
+			this.setState({
+				text: '',
+				checked: false,
+				date: this.minDate,
+			});
+		}
+	};
 	render() {
 		let maxDate = this.minDate.slice(0, 4) * 1 + 1;
-		// maxDate = maxDate + '-12-31';
+		
+		maxDate = maxDate + "-12-31"
+		console.log(maxDate);
+		
 		return (
 			<div className='list__header'>
 				<input
@@ -32,17 +46,22 @@ class AddPlanner extends React.Component {
 					value={this.state.text}
 					onChange={this.handleText}
 				/>
-				<input type='checkbox' checked={this.state.checked} id='important' onChange={this.handleCheckbox} />
+				<input
+					type='checkbox'
+					checked={this.state.checked}
+					id='important'
+					onChange={this.handleCheckbox}
+				/>
 				<label htmlFor='important'>Piorytet</label>
 				<label htmlFor='date'>Do kiedy zrobić</label>
 				<input
 					type='date'
 					value={this.state.date}
 					min={this.minDate}
-					max={this.maxDate}
+					max={maxDate}
 					onChange={this.handleDate}
 				/>
-				<button onChange={this.handleClick}>Dodaj</button>
+				<button onClick={this.handleClick}>Dodaj</button>
 			</div>
 		);
 	}
