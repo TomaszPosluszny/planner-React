@@ -22,7 +22,7 @@ class AddPlanner extends React.Component {
 
 	handleClick = () => {
 		console.log('dodaj');
-		const {text,checked, date} = this.state
+		const { text, checked, date } = this.state;
 		const add = this.props.add(text, date, checked);
 		if (add) {
 			this.setState({
@@ -34,34 +34,47 @@ class AddPlanner extends React.Component {
 	};
 	render() {
 		let maxDate = this.minDate.slice(0, 4) * 1 + 1;
-		
-		maxDate = maxDate + "-12-31"
+
+		maxDate = maxDate + '-12-31';
 		console.log(maxDate);
-		
+
 		return (
-			<div className='list__header'>
-				<input
-					type='text'
-					placeholder='Dodaj zadanie'
-					value={this.state.text}
-					onChange={this.handleText}
-				/>
-				<input
-					type='checkbox'
-					checked={this.state.checked}
-					id='important'
-					onChange={this.handleCheckbox}
-				/>
-				<label htmlFor='important'>Piorytet</label>
-				<label htmlFor='date'>Do kiedy zrobić</label>
-				<input
-					type='date'
-					value={this.state.date}
-					min={this.minDate}
-					max={maxDate}
-					onChange={this.handleDate}
-				/>
-				<button onClick={this.handleClick}>Dodaj</button>
+			<div className='list'>
+				<div className='list__all'>
+					<h1>Planer</h1>
+					<div className='list__header'>
+						<label htmlFor='date'>Do kiedy Zapłacić </label>
+						<input
+							className='list__date'
+							type='date'
+							value={this.state.date}
+							min={this.minDate}
+							max={maxDate}
+							onChange={this.handleDate}
+						/>
+						<label htmlFor='important' className='list__important'>
+							<input
+								className='list__input'
+								type='text'
+								placeholder='Wpisz treść wydatku...'
+								value={this.state.text}
+								onChange={this.handleText}
+							/>
+							<input
+								className='list__checkbox'
+								type='checkbox'
+								checked={this.state.checked}
+								id='important'
+								onChange={this.handleCheckbox}
+							/>
+							Piorytet
+						</label>
+
+						<button className='list__btn' onClick={this.handleClick}>
+							dodaj
+						</button>
+					</div>
+				</div>
 			</div>
 		);
 	}

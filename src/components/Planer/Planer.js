@@ -1,5 +1,5 @@
 import React from 'react';
-// import './PLaner.css';
+import './Planer.scss';
 import AddPlaner from './AdPlaner';
 import ListPlanner from './ListPlanner';
 
@@ -53,8 +53,7 @@ class Planer extends React.Component {
 	};
 	render() {
 		return (
-			<div className='App'>
-				PLANER
+			<div>
 				<AddPlaner add={this.AddPlaner} />
 				<ListPlanner
 					tasks={this.state.tasks}

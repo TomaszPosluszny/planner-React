@@ -1,0 +1,63 @@
+.Planer {
+	text-align: center;
+}
+
+.list {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: flex-start;
+	&__all {
+		width: 400px;
+		text-align: center;
+		background: #fff;
+		border-radius: 5px;
+	}
+	&__header {
+		padding: 40px;
+	}
+	&__input {
+		padding: 10px 20px;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		margin-right: 20px;
+		border: 1px solid black;
+		color: black;
+		background-color: white;
+	}
+	&__date {
+		padding: 10px 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+		border: 1px solid black;
+		color: black;
+		background-color: white;
+	}
+	&__checkbox {
+		padding: 10px 20px;
+		margin-top: 10px;
+		margin-right: 10px;
+		border: 1px solid black;
+		color: black;
+		background-color: white;
+	}
+	&__important {
+		color: red;
+	}
+	&__btn {
+		padding: 10px 20px;
+		margin-right: 20px;
+		margin-top: 10px;
+		border: 1px solid black;
+		border-radius: 5px;
+		color: black;
+		background-color: white;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: background-color 0.3s, color 0.3s;
+	}
+	&__btn:hover {
+		color: white;
+		background-color: black;
+	}
+}

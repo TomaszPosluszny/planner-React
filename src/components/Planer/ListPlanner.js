@@ -1,5 +1,5 @@
 import React from 'react';
-
+// import './planner.css'
 import Task from './Task';
 
 function ListPlanner(props) {
