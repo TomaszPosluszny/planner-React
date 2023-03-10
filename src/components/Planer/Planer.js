@@ -31,7 +31,10 @@ class Planer extends React.Component {
 		this.setState({ tasks });
 	};
 	changeTaskStatus = (id) => {
-		console.log('change' + id);
+		console.log(id.target);
+
+		const Tom = document.querySelector('todo__complete');
+		console.log(Tom);
 	};
 	object;
 	AddPlaner = (text, date, important) => {
@@ -60,6 +63,7 @@ class Planer extends React.Component {
 					delete={this.deleteTask}
 					change={this.changeTaskStatus}
 				/>
+				
 			</div>
 		);
 	}

@@ -14,7 +14,7 @@
 		border-radius: 5px;
 	}
 	&__header {
-		padding: 40px;
+		padding: 20px;
 	}
 	&__input {
 		padding: 10px 20px;
@@ -60,4 +60,65 @@
 		color: white;
 		background-color: black;
 	}
+}
+.todo {
+	&__list {
+		text-transform: uppercase;
+	}
+	li {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+		background-color: white;
+	}
+	&__alert {
+		margin-top: 20px;
+		color: black;
+	}
+	&__tools {
+		display: inline-block;
+		
+	}
+	&__complete {
+		padding: 15px 10px;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+	&__complete:hover {
+		color: white;
+		background-color: black;
+	}
+	
+	&__edit {
+		font-weight: bold;
+		padding: 15px 10px;
+		color: black;
+		border: none;
+		background-color: white;
+		cursor: pointer;
+	}
+	&__edit:hover {
+		color: white;
+		background-color: black;
+	}
+	&__delete {
+		color: tomato;
+		padding: 15px 10px;
+		border: none;
+		background-color: white;
+		cursor: pointer;
+	}
+	&__delete:hover {
+		color: white;
+		background-color: black;
+	}
+}
+.completed {
+	font-size: 12px;
+	font-style: italic;
+	color: var(--light-dark);
+	text-decoration: line-through;
 }

@@ -80,11 +80,6 @@ class AddPlanner extends React.Component {
 	}
 }
 
-// function AddPlanner (){
-//     return(
-// <div className="list__header">
-//     <div>Dodaj task</div></div>
 
-//     )
 
 export default AddPlanner;
