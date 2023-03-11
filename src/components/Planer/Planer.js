@@ -20,7 +20,7 @@ class Planer extends React.Component {
 				text: 'Rata za Auto',
 				date: '2023-03-16',
 				important: false,
-				active: true,
+				active: false,
 				finishDate: null,
 			},
 		],
@@ -31,10 +31,10 @@ class Planer extends React.Component {
 		this.setState({ tasks });
 	};
 	changeTaskStatus = (id) => {
-		console.log(id.target);
+		console.log("jest zmiana");
+		const tasks = Array.from(this.state.tasks);
+		tasks.forEach(task =>{if(task.id === id){task.active = false}})
 
-		const Tom = document.querySelector('todo__complete');
-		console.log(Tom);
 	};
 	object;
 	AddPlaner = (text, date, important) => {
