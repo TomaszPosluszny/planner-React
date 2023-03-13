@@ -54,14 +54,19 @@ class Planer extends React.Component {
 		}));
 		return true;
 	};
+
+
+
 	render() {
 		return (
 			<div>
-				<AddPlaner add={this.AddPlaner} />
+				<AddPlaner add={this.AddPlaner}
+				git />
 				<ListPlanner
 					tasks={this.state.tasks}
 					delete={this.deleteTask}
 					change={this.changeTaskStatus}
+					add={this.AddPlaner}
 				/>
 				
 			</div>

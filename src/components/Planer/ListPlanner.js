@@ -11,6 +11,8 @@ function ListPlanner(props) {
 			task={task}
 			delete={props.delete}
 			change={props.change}
+			add={props.add}
+			
 		/>
 	));
 	return (

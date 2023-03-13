@@ -3,13 +3,13 @@ import React from 'react';
 class AddPlanner extends React.Component {
 	minDate = new Date().toISOString().slice(0, 10);
 	state = {
-		text: '',
+		textraa: '',
 		checked: false,
 		date: this.minDate,
 	};
 
 	handleText = (e) => {
-		this.setState({ text: e.target.value });
+		this.setState({ textraa: e.target.value });
 	};
 
 	handleDate = (e) => {
@@ -22,11 +22,11 @@ class AddPlanner extends React.Component {
 
 	handleClick = () => {
 		console.log('dodaj');
-		const { text, checked, date } = this.state;
-		const add = this.props.add(text, date, checked);
+		const { textraa, checked, date } = this.state;
+		const add = this.props.add(textraa, date, checked);
 		if (add) {
 			this.setState({
-				text: '',
+				textraa: '',
 				checked: false,
 				date: this.minDate,
 			});
