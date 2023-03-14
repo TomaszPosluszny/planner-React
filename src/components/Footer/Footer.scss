@@ -1,0 +1,24 @@
+.footer {
+	color: white;
+	background-color: black;
+	flex-grow: 1;
+	&__boxes {
+		margin-top: 20px;
+		text-align: center;
+		font-size: 25px;
+	}
+	&__box-social {
+		margin: 15px 13px;
+		text-align: center;
+	}
+	&__box-link {
+		// color: white;
+		font-size: 35px;
+	}
+	&__bottom-text {
+		padding: 6px;
+		margin-bottom: 30px;
+		font-size: 15px;
+		text-align: center;
+	}
+}
