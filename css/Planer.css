@@ -1,0 +1,123 @@
+.Planer {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+.list__all {
+  width: 500px;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+}
+.list__header {
+  padding: 20px;
+}
+.list__input {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+.list__date {
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+.list__checkbox {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+.list__important {
+  color: red;
+}
+.list__btn {
+  padding: 10px 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.list__btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.todo__list {
+  text-transform: uppercase;
+}
+.todo li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: white;
+}
+.todo__alert {
+  margin-top: 20px;
+  color: black;
+}
+.todo__tools {
+  display: inline-block;
+}
+.todo__complete {
+  padding: 15px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.todo__complete:hover {
+  color: white;
+  background-color: black;
+}
+.todo__edit {
+  font-weight: bold;
+  padding: 15px 10px;
+  color: black;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.todo__edit:hover {
+  color: white;
+  background-color: black;
+}
+.todo__delete {
+  color: tomato;
+  padding: 15px 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.todo__delete:hover {
+  color: white;
+  background-color: black;
+}
+
+.completed {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--light-dark);
+  text-decoration: line-through;
+}/*# sourceMappingURL=Planer.css.map */

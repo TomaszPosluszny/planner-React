@@ -13,9 +13,9 @@ function Footer() {
 		<footer className="footer">
 			<p class="footer__boxes">Ogarniam finanse to profesionalny menadżer wydatków</p>
 			<div classNam="footer__box-social">
-			gsdgdsgds
+			
 <span  className='footer__box-link' >
-<FontAwesomeIcon icon="fa-brands fa-square-twitter" /></span>
+<FontAwesomeIcon icon="fa-brands fa-square-twitter" />   <FontAwesomeIcon icon="fab fa-facebook-square" /> <FontAwesomeIcon icon="fa-brands fa-instagram" /></span>
 				{/* <i class="fab fa-facebook-square"></i>
 				<i class="fab fa-instagram"></i> */}
 			</div>

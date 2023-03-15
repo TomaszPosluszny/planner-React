@@ -1,14 +1,17 @@
 .Planer {
 	text-align: center;
+	
 }
 
 .list {
+
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
 	align-items: flex-start;
+	 flex-grow: 1;
 	&__all {
-		width: 400px;
+		width: 500px;
 		text-align: center;
 		background: #fff;
 		border-radius: 5px;
@@ -121,56 +124,5 @@
 	color: var(--light-dark);
 	text-decoration: line-through;
 }
-.edit {
-	display: none;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	position: fixed;
-	bottom: 20px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 400px;
-	color: white;
-	background-color: black;
-	border-radius: 5px;
-	h3 {
-		padding: 2px;
-	}
-	&__body {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		width: 90%;
-		padding: 10px;
-	}
-	&__info {
-		margin-bottom: 2px;
-		color: black;
-	}
-	&__input {
-		width: 100%;
-		padding: 10px 20px;
-		border: none;
-		color: black;
-		background-color: white;
-	}
-	&__btn {
-		display: inline-block;
-		padding: 10px 22px;
-		margin: 20px;
-		border: none;
-		border-radius: 5px;
-		border: 1px solid white;
-		color: black;
-		background-color: white;
-		text-transform: uppercase;
-		cursor: pointer;
-		transition: background-color 0.3s, color 0.3s;
-	}
-	&__btn:hover {
-		color: white;
-		background-color: black;
-	}
-}
+
 

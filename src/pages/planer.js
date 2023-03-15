@@ -59,7 +59,7 @@ class Planer extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className='footerr' >
 				<AddPlaner add={this.AddPlaner}
 				git />
 				<ListPlanner

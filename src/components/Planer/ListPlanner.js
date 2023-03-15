@@ -24,7 +24,7 @@ function ListPlanner(props) {
 					{tasks.length > 0 ? tasks : <p className='todo__alert'>brak zadań</p>}
 				</div>
 			</div>
-			<hr />
+			
 		</>
 	);
 }

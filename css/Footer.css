@@ -1,0 +1,26 @@
+.footer {
+  color: white;
+  background-color: black;
+  height: 200px;
+}
+.footer__boxes {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+.footer__box-social {
+  margin: 15px 13px;
+  text-align: center;
+}
+.footer__box-link {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
+.footer__bottom-text {
+  padding: 6px;
+  font-size: 15px;
+  text-align: center;
+}/*# sourceMappingURL=Footer.css.map */
