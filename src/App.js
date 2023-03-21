@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Registration from './pages/Registration';
-import { Router, Route, browserHistory   } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes  } from 'react-router-dom';
 import Planer from './pages/Planer';
 import Footer from './components/Footer/Footer';
 import Nav from './components/Nav';
@@ -12,17 +12,22 @@ library.add(fas, fab);
 
 function App() {
 	return (
-		
-		<div>
-				<Nav />
-				<Planer />
 
+		<Router>
+				<Nav />
+				<Routes>
+				<Route exact path="/" element={<Planer />}/>
+          <Route exact path="/registration" element={<Registration/>}/>
+          
+          
+				{/* <Planer /> */}
+				</Routes>
 				<Footer />
-				
-				
+
+
 				{/* </Routes> */}
-				</div>
-	
+				</Router>
+
 	);
 }
 
