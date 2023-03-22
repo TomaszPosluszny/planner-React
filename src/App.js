@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Registration from './pages/Registration';
-import { BrowserRouter as Router, Route, Link, Routes  } from 'react-router-dom';
+import { BrowserRouter as Router, Route,  Routes  } from 'react-router-dom';
 import Planer from './pages/Planer';
 import Footer from './components/Footer/Footer';
 import Nav from './components/Nav';
