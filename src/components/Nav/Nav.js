@@ -17,7 +17,7 @@ function Nav() {
 			<a className="deskop__link" href="notes.html">Notatnik</a>
 			<div>
 			<Link className="deskop__link--border" to="/registration"> Załóż konto</Link>
-				<a className="deskop__link--border" href="login.html">Zaloguj</a>
+			<Link  className="deskop__link--border" to="login">Zaloguj</Link>
 			</div>
 		</nav>
 		</>
