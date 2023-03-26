@@ -1,0 +1,119 @@
+.area {
+	display: flex;
+	justify-content: center;
+	// flex-direction: row;
+	// align-items: flex-start;
+	//  flex-grow: 1;
+
+	&__all {
+		width: 400px;
+		background-color: #fff;
+		border: 1px solid black;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	h2 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	form {
+		padding: 40px;
+        padding-bottom: 5px;
+		font-size: 18px;
+	}
+	&__box {
+		margin-bottom: 10px;
+		label {
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+		input {
+			width: 100%;
+			padding: 8px;
+			font-size: 14px;
+			border: 1px solid rgb(197, 197, 197);
+			border-radius: 5px;
+		}
+	}
+	&__error {
+		visibility: hidden;
+		margin: 1px 0 0 2px;
+		font-size: 14px;
+		color: rgb(0, 137, 250);
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__buttons--send,
+	&__buttons--close {
+		padding: 12px 20px;
+		margin-left: 130px;
+        margin-top: 10px;
+		color: black;
+		border: 1px solid black;
+		border-radius: 5px;
+		background: none;
+		transition: color 0.3s, background-color 0.3s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	&__buttons--clear {
+        display: flex;
+        justify-content: center;
+		padding: 12px 20px;
+		margin-left: 160px;
+        margin-bottom: 10px;
+		color: black;
+		border: 1px solid black;
+		border-radius: 5px;
+		background: none;
+		transition: color 0.3s, background-color 0.3s;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	&__buttons--clear:hover,
+	&__buttons--send:hover,
+	&__buttons--close:hover {
+		color: white;
+		background-color: black;
+	}
+	&__send {
+		display: none;
+		margin-top: 10px;
+		p {
+			font-size: 15px;
+		}
+		button {
+			margin-top: 20px;
+		}
+	}
+	&__data {
+		display: none;
+		margin-top: 10px;
+		p {
+			font-size: 15px;
+		}
+		button {
+			margin-top: 20px;
+		}
+	}
+}
+
+.area__box.error input {
+	border: 1px solid black;
+	background-color: rgb(208, 208, 208);
+}
+
+.area__box .area__error {
+	visibility: hidden;
+	margin: 5px 0 0 10px;
+	font-size: 14px;
+	color: rgb(0, 137, 250);
+}
+
+.area__box.error .area__error {
+	visibility: visible;
+}

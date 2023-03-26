@@ -1,4 +1,7 @@
 import React from 'react';
+
+import'./Form.scss';
+
 class Form extends React.Component {
 	state = {
 		username: '',
@@ -95,9 +98,10 @@ class Form extends React.Component {
 
 	render() {
 		return (
-			<div className='registration'>
+			
+			<div className='area__all' >
 				<form onSubmit={this.handleSubmit} noValidate>
-					<label htmlFor='user'>
+					<label  className='area__box' htmlFor='user'>
 						Twoje imię:
 						<input
 							type='text'
@@ -108,7 +112,7 @@ class Form extends React.Component {
 						></input>
 					</label>
 
-					<label htmlFor='password'>
+					<label  className='area__box' htmlFor='password'>
 						Podaj Twoje hasło:
 						<input
 							type='password'
@@ -119,9 +123,10 @@ class Form extends React.Component {
 						></input>
 					</label>
 
-					<button>Wyślij</button>
+					<button className='area__buttons--send'>Wyślij</button>
+					
 				</form>
-				<button onClick={() => this.setState({
+				<button className='area__buttons--clear' onClick={() => this.setState({
 				username: '',
 				pass: '',
 				message: '',
@@ -132,6 +137,7 @@ class Form extends React.Component {
 					<span>{this.messages.username_incorrect}</span>
 				)}
 			</div>
+			
 		);
 	}
 }

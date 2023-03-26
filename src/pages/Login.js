@@ -1,10 +1,14 @@
 import React from 'react';
-
+import '../components/Login/Form.scss'
 import Form from '../components/Login/Form';
 
 class Login extends React.Component {
 	render() {
-		return <Form />;
+		return (
+		<div className='area'>
+				<Form/>
+				</div>
+		);
 	}
 }
 
