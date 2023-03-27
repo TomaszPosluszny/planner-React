@@ -19,9 +19,9 @@ class Validator extends React.Component {
 
 	messages = {
 		username_incorrect:
-			'Nazwa musi być dłuższa niż 10 znaków i nie może zawierać spacji',
+			'Nazwa musi być dłuższa niż 10',
 		email_incorrect: 'Brak @ w emilu',
-		password_incorrect: 'Hasło musi mieć 8 zanków',
+		password_incorrect: 'Hasło musi mieć 8 zanków zanków',
 		accept_incorrect: 'Nie potwierdzona zgoda',
 	};
 
@@ -52,7 +52,7 @@ class Validator extends React.Component {
 				email: '',
 				pass: '',
 				accept: false,
-				message: 'Formularz został wysłany',
+				message: 'Zarejestrowano pomyślnie :)',
 
 				errors: {
 					username: false,
@@ -79,7 +79,7 @@ this.setState({
 		let password = false;
 		let accept = false;
 		let correct = false;
-		if(this.state.username.length> 10 &&  this.state.username.indexOf(' ') === -1){
+		if(this.state.username.length> 10 ){
 			username = true
 		}
 
@@ -108,9 +108,10 @@ this.setState({
 	}
 	render() {
 		return (
-			<div className='registration'>
+			<div className='area__all' >
 				<form onSubmit={this.handleSubmit} noValidate>
-					<label htmlFor='user'>
+				<h2>Zarejestrój się !</h2>
+					<label className='area__box' htmlFor='user'>
 						Twoje imię:
 						<input
 							type='text'
@@ -120,10 +121,10 @@ this.setState({
 							onChange={this.handleChange}
 						></input>
 						{this.state.errors.username && (
-							<span>{this.messages.username_incorrect}</span>
+							<div className='area__box--error'>{this.messages.username_incorrect}</div>
 						)}
 					</label>
-					<label htmlFor='email'>
+					<label className='area__box' htmlFor='email'>
 						Twój adres emil:
 						<input
 							type='email'
@@ -133,10 +134,10 @@ this.setState({
 							onChange={this.handleChange}
 						></input>
 						{this.state.errors.email && (
-							<span>{this.messages.email_incorrect}</span>
+							<div className='area__box--error'>{this.messages.email_incorrect}</div>
 						)}
 					</label>
-					<label htmlFor='password'>
+					<label className='area__box' htmlFor='password'>
 						Podaj Twoje hasło:
 						<input
 							type='password'
@@ -146,7 +147,7 @@ this.setState({
 							onChange={this.handleChange}
 						></input>
 						{this.state.errors.pass && (
-							<span>{this.messages.password_incorrect}</span>
+							<div className='area__box--error'>{this.messages.password_incorrect}</div>
 						)}
 					</label>
 					<label htmlFor='accept'>
@@ -159,12 +160,12 @@ this.setState({
 						/>
 						Wyrażam zgodę na wszystko.
 					</label>
-					{this.state.errors.akcept && (
-						<span>{this.messages.accept_incorrect}</span>
+					{this.state.errors.accept && (
+						<div className='area__box--error'>{this.messages.accept_incorrect}</div>
 					)}
-					<button>Wyślij</button>
+					<button className='area__buttons--send'>Wyślij</button>
 				</form>
-				<button onClick={() => this.setState({
+				<button className='area__buttons--clear' onClick={() => this.setState({
 				username: '',
 				pass: '',
 				message: '',

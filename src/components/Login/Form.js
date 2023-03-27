@@ -101,6 +101,7 @@ class Form extends React.Component {
 			
 			<div className='area__all' >
 				<form onSubmit={this.handleSubmit} noValidate>
+					<h2>Zalogój się !</h2>
 					<label  className='area__box' htmlFor='user'>
 						Twoje imię:
 						<input
