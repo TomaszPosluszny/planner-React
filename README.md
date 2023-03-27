@@ -7,17 +7,13 @@
 - Planner (advanced ToDo List)
 - Form validator (login and registration)
 
-
-
-
 ## Technologies
 
 - React
-- Css
 - Sass
 - BEM
 - JSX
-
+ .
 ## Setup
 
-....
+[Link to the page](https://tomaszposluszny.github.io/planner-react/)
