@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tomaszposluszny.github.io/planner-react/static/css/main.fbbc74d0.css",
-    "main.js": "/tomaszposluszny.github.io/planner-react/static/js/main.922ccd69.js",
+    "main.js": "/tomaszposluszny.github.io/planner-react/static/js/main.de4faa77.js",
     "static/js/787.66a4299e.chunk.js": "/tomaszposluszny.github.io/planner-react/static/js/787.66a4299e.chunk.js",
     "index.html": "/tomaszposluszny.github.io/planner-react/index.html",
     "main.fbbc74d0.css.map": "/tomaszposluszny.github.io/planner-react/static/css/main.fbbc74d0.css.map",
-    "main.922ccd69.js.map": "/tomaszposluszny.github.io/planner-react/static/js/main.922ccd69.js.map",
+    "main.de4faa77.js.map": "/tomaszposluszny.github.io/planner-react/static/js/main.de4faa77.js.map",
     "787.66a4299e.chunk.js.map": "/tomaszposluszny.github.io/planner-react/static/js/787.66a4299e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbbc74d0.css",
-    "static/js/main.922ccd69.js"
+    "static/js/main.de4faa77.js"
   ]
 }
