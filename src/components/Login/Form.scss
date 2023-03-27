@@ -1,18 +1,19 @@
-.area {
+.area{
 	display: flex;
 	justify-content: center;
-	height: 530px;
+	height: 500px;
 
 	&__all {
 		width: 410px;
 		background-color: #fff;
-		border: 1px solid black;
+		
 		margin-top: 5px;
 		margin-bottom: 25px;
 	}
 	h2 {
 		text-align: center;
 		margin-bottom: 20px;
+		font-family:Arial, Helvetica, sans-serif
 	}
 	form {
 		padding-bottom: 5px;
@@ -36,7 +37,7 @@
 			margin: 5px;
 			font-size: 14px;
 			border: 1px solid rgb(197, 197, 197);
-			border-radius: 5px;
+			
 		}
 	}
 
@@ -48,8 +49,9 @@
 
 	&__buttons--send{
 		padding: 12px 20px;
-		margin-left: 130px;
+		margin-left: 10px;
         margin-top: 10px;
+		margin-bottom: 20px;
 		color: black;
 		border: 1px solid black;
 		border-radius: 5px;
@@ -62,7 +64,7 @@
         display: flex;
         justify-content: center;
 		padding: 12px 20px;
-		margin-left: 160px;
+		margin-left: 250px;
         margin-bottom: 10px;
 		color: black;
 		border: 1px solid black;
@@ -86,13 +88,3 @@
 	
 }
 
-.area__box .area__error {
-	visibility: hidden;
-	
-	font-size: 14px;
-	color: rgb(0, 137, 250);
-}
-
-// .area__box.error .area__error {
-// 	visibility: visible;
-// }

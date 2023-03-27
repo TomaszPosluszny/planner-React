@@ -11,10 +11,9 @@ function Nav() {
 	return (
 		<>
 	<nav className="deskop">
-			<h1 className="header__name-company">Ogarniam finanse</h1>
-			<Link to ="/" className="deskop__link" >Menadżer</Link>
-			<a className="deskop__link" href="planer.html">Planer</a>
-			<a className="deskop__link" href="notes.html">Notatnik</a>
+			
+			<h1 className="header__name-company"><Link to ="/" className="deskop__link" >Planer</Link></h1>
+		
 			<div>
 			<Link className="deskop__link--border" to="/registration"> Załóż konto</Link>
 			<Link  className="deskop__link--border" to="login">Zaloguj</Link>

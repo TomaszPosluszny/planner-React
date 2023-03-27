@@ -11,7 +11,7 @@ function Footer() {
 	return (
 		<>
 		<footer className="footer">
-			<p className="footer__boxes">Ogarniam finanse to profesionalny menadżer wydatków</p>
+			<p className="footer__boxes">Planer to profesionalna Lista Zadań</p>
 			<div className="footer__box-social">
 			
 <span  className='footer__box-link' >
@@ -19,7 +19,7 @@ function Footer() {
 				{/* <i class="fab fa-facebook-square"></i>
 				<i class="fab fa-instagram"></i> */}
 			</div>
-			<p className="footer__bottom-text"> &copy;<span className="footer__year"></span>Ogarniam Finanse 2022</p>
+			<p className="footer__bottom-text"> &copy;<span className="footer__year"></span>Planer 2022</p>
 		</footer>
 		</>
 	);
