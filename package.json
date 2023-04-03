@@ -1,7 +1,7 @@
 {
     "name": "news-app",
     "version": "0.1.0",
-    "homepage": "https://github.com/tomaszposluszny.github.io/planner-react",
+    "homepage": "https://tomaszposluszny.github.io/planner-react/",
     "private": true,
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.3.0",
