@@ -16,4 +16,4 @@
  .
 ## Setup
 
-[Link to the page](https://tomaszposluszny.github.io/planner-react/)
+[Link to the page](https://tomaszposluszny.github.io/planner-React/)

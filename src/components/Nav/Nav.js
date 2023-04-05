@@ -12,7 +12,7 @@ function Nav() {
 		<>
 	<nav className="deskop">
 			
-			<h1 className="header__name-company"><Link to ="planner-react" className="deskop__link" >Planer</Link></h1>
+			<h1 className="header__name-company"><Link to ="planner-React" className="deskop__link" >Planer</Link></h1>
 		
 			<div>
 			<Link className="deskop__link--border" to="/registration"> Załóż konto</Link>

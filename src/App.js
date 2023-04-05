@@ -19,7 +19,7 @@ function App() {
 		<Router>
 				<Nav />
 				<Routes>
-				<Route exact path="planner-react/" element={<Planer />}/>
+				<Route exact path="planner-React/" element={<Planer />}/>
 				
           <Route exact path="/registration" element={<Registration/>}/>
 		  <Route exact path="/login" element={<Login/>}/>
